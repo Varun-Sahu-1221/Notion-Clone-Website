@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a demo</title>
+    <link rel="stylesheet" href="demo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="Images/Notion-Logo.png" />
+            <span>Notion</span>
+          </a>
+        </div>
+        <div class="nav-links desktop-nav">
+          <ul>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="ai.html">AI</a></li>
+            <li><a href="enterprise.html">Enterprise</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="demo.html">Request a demo</a></li>
+          </ul>
+        </div>
+        <div class="nav-actions-container">
+          <div class="nav-actions desktop-nav">
+            <ul>
+              <li><a id="Log-in" href="#">Log in</a></li>
+              <li><a id="Get-Notion" href="#">Get Notion free</a></li>
+            </ul>
+          </div>
+          <button class="mobile-nav-toggle" id="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-nav" id="mobile-nav-menu">
+        <ul>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="ai.html">AI</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="demo.html">Request a demo</a></li>
+          <li><a id="Log-in" href="#">Log in</a></li>
+          <li><a id="Get-Notion" href="#">Get Notion free</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="Page1">
+        <div class="contact-container">
+          <!-- Left Column -->
+          <div class="left-column">
+            <h1>Contact our sales team</h1>
+            <p>
+              Get help with pricing and plans, schedule a demo, explore
+              use-cases for your team, and more.
+            </p>
+
+            <div class="logos-section">
+              <span>Millions run on Notion everyday</span>
+              <div class="logos">
+                <img src="Images/slack-logo.png" />
+                <img src="Images/github-logo.avif" />
+                <img src="Images/google-workspace-logo.png" />
+                <img src="Images/jira-logo.avif" />
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="openai-logo">OpenAI</div>
+              <blockquote>
+                “People need an application to store knowledge for the team and
+                keep pace with how quickly OpenAI moves. There’s power in a
+                single platform where you can do all your work. Notion is that
+                single place.”
+              </blockquote>
+              <div class="author">
+                Nick Erdenberger
+                <span>GTM, OpenAI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="right-column">
+            <form action="#" method="POST">
+              <div class="form-grid">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name">First name <span>*</span></label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      placeholder="Ada"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last name <span>*</span></label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      placeholder="Lovelace"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="work-email">Work email <span>*</span></label>
+                    <input
+                      type="email"
+                      id="work-email"
+                      name="work-email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="job-title">Job title <span>*</span></label>
+                    <input
+                      type="text"
+                      id="job-title"
+                      name="job-title"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="company-name"
+                      >Company name <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="company-name"
+                      name="company-name"
+                      placeholder="Lovelace Inc."
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="company-size"
+                      >Company size <span>*</span></label
+                    >
+                    <select id="company-size" name="company-size" required>
+                      <option value="" disabled selected>Select...</option>
+                      <option value="1-10">1-10 employees</option>
+                      <option value="11-50">11-50 employees</option>
+                      <option value="51-200">51-200 employees</option>
+                      <option value="201-1000">201-1000 employees</option>
+                      <option value="1000+">1000+ employees</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="country"
+                      >Country or region <span>*</span></label
+                    >
+                    <select id="country" name="country" required>
+                      <option value="" disabled selected>Select...</option>
+                      <option value="India">India</option>
+                      <option value="USA">United States</option>
+                      <option value="Canada">Canada</option>
+                      <option value="UK">United Kingdom</option>
+                      <option value="Germany">Germany</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone-number"
+                      >Phone number <span>*</span></label
+                    >
+                    <input
+                      type="tel"
+                      id="phone-number"
+                      name="phone-number"
+                      placeholder="(123) 456-7891"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reason">Reason for contact <span>*</span></label>
+                  <select id="reason" name="reason" required>
+                    <option value="" selected disabled>Select...</option>
+                    <option value="pricing">Pricing Inquiry</option>
+                    <option value="demo">Request a Demo</option>
+                    <option value="support">Technical Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="details"
+                    >Provide more details <span>*</span></label
+                  >
+                  <textarea
+                    id="details"
+                    name="details"
+                    placeholder="How are you looking to use Notion?"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="marketing-agree"
+                    name="marketing-agree"
+                    checked
+                  />
+                  <label for="marketing-agree"
+                    >I agree to Notion sending marketing communications about
+                    Notion</label
+                  >
+                </div>
+
+                <button type="submit" class="submit-btn">Contact sales</button>
+
+                <p class="disclaimer">
+                  You may unsubscribe from receiving marketing communications
+                  any time. Notion's websites and communications are subject to
+                  our <a href="#">Privacy Policy</a>.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="social-icons">
+                <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="x-twitter" href="#"><i class="fab fa-x-twitter"></i></a>
+                <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright-text">&copy; 2025 Notion Labs, Inc.</p>
+        </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav-menu");
+      const menuOpenIcon = document.getElementById("menu-open-icon");
+      const menuCloseIcon = document.getElementById("menu-close-icon");
+      menuToggle.addEventListener("click", () => {
+        const isMenuOpen = mobileNav.style.display === "block";
+        if (isMenuOpen) {
+          mobileNav.style.display = "none";
+          menuOpenIcon.style.display = "block";
+          menuCloseIcon.style.display = "none";
+        } else {
+          mobileNav.style.display = "block";
+          menuOpenIcon.style.display = "none";
+          menuCloseIcon.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enterprise</title>
+    <link rel="stylesheet" href="enterprise.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="Images/Notion-Logo.png" />
+            <span>Notion</span>
+          </a>
+        </div>
+        <div class="nav-links desktop-nav">
+          <ul>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="ai.html">AI</a></li>
+            <li><a href="enterprise.html">Enterprise</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="demo.html">Request a demo</a></li>
+          </ul>
+        </div>
+        <div class="nav-actions-container">
+          <div class="nav-actions desktop-nav">
+            <ul>
+              <li><a id="Log-in" href="#">Log in</a></li>
+              <li><a id="Get-Notion" href="#">Get Notion free</a></li>
+            </ul>
+          </div>
+          <button class="mobile-nav-toggle" id="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-nav" id="mobile-nav-menu">
+        <ul>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="ai.html">AI</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="demo.html">Request a demo</a></li>
+          <li><a id="Log-in" href="#">Log in</a></li>
+          <li><a id="Get-Notion" href="#">Get Notion free</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="Page1">
+        <div class="Sub-Heading1"><p>Notion for Enterprise</p></div>
+        <div class="Heading1"><h2>Knowledge and work. Connected.</h2></div>
+        <div class="Sub-Heading2">
+          <p>
+            One secure AI workspace where enterprise teams plan, collaborate,
+            and build faster together.
+          </p>
+        </div>
+        <div class="Button1" id="Request-a-Demo">
+          <a href="demo.html">Request a demo</a>
+        </div>
+        <div class="Sub-Heading3">
+          <p>Trusted by 98% of the Forbes Cloud 100</p>
+        </div>
+        <div class="Company-Logo">
+          <div class="Comp1">
+            <img id="Figma" src="Images/Figma.svg" />
+            <img id="Open-AI" src="Images/OpenAI.avif" />
+            <img id="Match" src="Images/match-logo.avif" />
+          </div>
+          <div class="Comp2">
+            <img id="Vercel" src="Images/vercel.svg" />
+            <img id="Ramp" src="Images/ramp.avif" />
+            <img id="Volvo" src="Images/volvo.avif" />
+          </div>
+        </div>
+        <div class="feature-showcase">
+          <div class="feature-grid">
+            <div class="feature-box" data-image="Images/IT-Page4.png">
+              <h3>Company knowledge</h3>
+              <p>One home that's organized, searchable, and accurate.</p>
+            </div>
+            <div class="feature-box" data-image="Images/Products-Page4.png">
+              <h3>Enterprise search</h3>
+              <p>Instantly surface answers across Notion and connected apps.</p>
+            </div>
+            <div class="feature-box" data-image="Images/Design-Page4.png">
+              <h3>Integrated projects</h3>
+              <p>Plan tasks, track progress, and align teams.</p>
+            </div>
+            <div class="feature-box" data-image="Images/Marketing-Page4.png">
+              <h3>Workflows & integrations</h3>
+              <p>Automate any process and integrate your tools.</p>
+            </div>
+          </div>
+          <div class="image-display-area">
+            <img id="feature-image" src="" alt="Feature showcase" />
+          </div>
+        </div>
+        <div class="Multiple-Box">
+          <div class="Box2">
+            <div class="Sub-Heading4"><p>Harvard Report</p></div>
+            <img src="Images/Harvard-Review.avif" />
+          </div>
+          <div class="Box3">
+            <div class="Sub-Heading5">
+              <p>Your centralized product dev in Notion</p>
+            </div>
+            <img src="Images/Product-Roadmap.avif" />
+          </div>
+          <div class="Box4">
+            <div class="Sub-Heading6">
+              <p>Take a self-guided demo of a Notion</p>
+            </div>
+            <img src="Images/COmpany-Home.avif" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="social-icons">
+          <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="x-twitter" href="#"><i class="fab fa-x-twitter"></i></a>
+          <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright-text">&copy; 2025 Notion Labs, Inc.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav-menu");
+      const menuOpenIcon = document.getElementById("menu-open-icon");
+      const menuCloseIcon = document.getElementById("menu-close-icon");
+      menuToggle.addEventListener("click", () => {
+        const isMenuOpen = mobileNav.style.display === "block";
+        if (isMenuOpen) {
+          mobileNav.style.display = "none";
+          menuOpenIcon.style.display = "block";
+          menuCloseIcon.style.display = "none";
+        } else {
+          mobileNav.style.display = "block";
+          menuOpenIcon.style.display = "none";
+          menuCloseIcon.style.display = "block";
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const featureBoxes = document.querySelectorAll(".feature-box");
+        const featureImage = document.getElementById("feature-image");
+        function updateFeature(activeBox) {
+          const newImageSrc = activeBox.dataset.image;
+          featureBoxes.forEach((box) => {
+            box.classList.remove("active");
+          });
+          activeBox.classList.add("active");
+          featureImage.style.opacity = "0";
+          setTimeout(() => {
+            featureImage.src = newImageSrc;
+            featureImage.style.opacity = "1";
+          }, 300);
+        }
+        if (featureBoxes.length > 0) {
+          updateFeature(featureBoxes[0]);
+        }
+
+        featureBoxes.forEach((box) => {
+          box.addEventListener("mouseover", () => {
+            updateFeature(box);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

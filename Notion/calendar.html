@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="Images/Notion-Logo.png" />
+            <span>Notion</span>
+          </a>
+        </div>
+        <div class="nav-links desktop-nav">
+          <ul>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="ai.html">AI</a></li>
+            <li><a href="enterprise.html">Enterprise</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="demo.html">Request a demo</a></li>
+          </ul>
+        </div>
+        <div class="nav-actions-container">
+          <div class="nav-actions desktop-nav">
+            <ul>
+              <li><a id="Log-in" href="#">Log in</a></li>
+              <li><a id="Get-Notion" href="#">Get Notion free</a></li>
+            </ul>
+          </div>
+          <button class="mobile-nav-toggle" id="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-nav" id="mobile-nav-menu">
+        <ul>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="ai.html">AI</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="demo.html">Request a demo</a></li>
+          <li><a id="Log-in" href="#">Log in</a></li>
+          <li><a id="Get-Notion" href="#">Get Notion free</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="Real-Time-Calendar">
+        <div class="calendar">
+          <div class="calendar-header">
+            <span id="month-name"></span>
+            <span id="year"></span>
+          </div>
+          <div class="calendar-body">
+            <div class="day" id="day-name"></div>
+            <div class="date" id="day-number"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="Page1">
+        <div class="Sub-Heading1"><p>Notion Calendar</p></div>
+        <div class="Heading1"><h1>It's time.</h1></div>
+        <div class="Sub-Heading2">
+          <p>
+            All of your commitments, now in one place. Meet the beautifully
+            designed, fully integrated calendar for your work and life.
+          </p>
+        </div>
+        <a href="#">Get Notion Calendar free</a>
+        <div class="Heading2"><h1>Time management, simplified.</h1></div>
+      </div>
+      <div class="Page2">
+        <div class="Time-Management">
+          <div class="Box1">
+            <div class="Sub-Heading3"><p>See your schedule at a glance</p></div>
+            <img src="Images/Time-Management.avif" />
+          </div>
+        </div>
+        <div class="Containers">
+          <div class="Box2">
+            <div class="Sub-Heading4">
+              <i class="fa-solid fa-clock"></i>
+              <p>Built-in scheduling</p>
+            </div>
+            <div class="AI-Notes-Image">
+              <img
+                src="Images/AI-Meeting-Notes-Image.avif"
+                class="AI-Meet-img"
+              />
+            </div>
+          </div>
+          <div class="Box3">
+            <div class="Sub-Heading5">
+              <i class="fa-solid fa-list-check"></i>
+              <p>Work across time zones</p>
+            </div>
+            <div class="Enterprise-Search-Image">
+              <img
+                src="Images/Enterprise-Note-Image.avif"
+                class="Enterprise-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="Page3">
+        <div class="faq-container">
+          <h1>Questions & answers</h1>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >Which calendar provider(s) is Notion Calendar compatible
+                with?</span
+              >
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Currently, Notion Calendar integrates and syncs with Google
+                Calendar accounts and Apple iCloud-synced Calendars. Adding
+                support for other calendar providers such as Outlook is on our
+                roadmap.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Where can I find my invoices?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, Notion Calendar is available for iPhone and Android
+                devices. We know some users are looking for an optimized version
+                for tablet devices, such as iPad, and are working to make Notion
+                Calendar the best experience on all platforms.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >Does Notion Calendar bring Google Calendar sync to
+                Notion?</span
+              >
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Notion Calendar allows you to view your Notion database items
+                alongside your Google Calendar events. This offers a streamlined
+                way to see project timelines and task due dates alongside other
+                scheduled events. However, importing Google Calendar events
+                directly into a Notion database is not yet possible. We’re
+                always exploring new ways for Notion and calendars to interact.
+                Expect exciting developments soon!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="social-icons">
+          <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="x-twitter" href="#"><i class="fab fa-x-twitter"></i></a>
+          <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright-text">&copy; 2025 Notion Labs, Inc.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav-menu");
+      const menuOpenIcon = document.getElementById("menu-open-icon");
+      const menuCloseIcon = document.getElementById("menu-close-icon");
+      menuToggle.addEventListener("click", () => {
+        const isMenuOpen = mobileNav.style.display === "block";
+        if (isMenuOpen) {
+          mobileNav.style.display = "none";
+          menuOpenIcon.style.display = "block";
+          menuCloseIcon.style.display = "none";
+        } else {
+          mobileNav.style.display = "block";
+          menuOpenIcon.style.display = "none";
+          menuCloseIcon.style.display = "block";
+        }
+      });
+
+      // JavaScript to get and display the current date
+      document.addEventListener("DOMContentLoaded", function () {
+        const now = new Date();
+
+        const monthNames = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        const dayNames = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+
+        // Set the content of the elements
+        document.getElementById("month-name").textContent =
+          monthNames[now.getMonth()];
+        document.getElementById("year").textContent = now.getFullYear();
+        document.getElementById("day-name").textContent =
+          dayNames[now.getDay()];
+        document.getElementById("day-number").textContent = now.getDate();
+      });
+
+      // JavaScript to handle the accordion functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question");
+          const answer = item.querySelector(".faq-answer");
+          const icon = item.querySelector(".faq-icon");
+
+          question.addEventListener("click", () => {
+            // Toggle the 'active' class on the answer and icon
+            const isActive = answer.classList.toggle("active");
+            icon.classList.toggle("active");
+
+            // Change icon text based on state
+            icon.textContent = isActive ? "×" : "+";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
